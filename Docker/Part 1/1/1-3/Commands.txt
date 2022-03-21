@@ -1,0 +1,5 @@
+docker run -d --rm -it --name ex3 devopsdockeruh/simple-web-service:ubuntu
+
+docker exec -it ex3 bash
+
+tail -f ./text.log
