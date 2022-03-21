@@ -1,0 +1,5 @@
+docker run -d --rm -it --name ex5 devopsdockeruh/simple-web-service:ubuntu
+
+docker exec -it ex5 sh
+
+tail -f ./text.log
