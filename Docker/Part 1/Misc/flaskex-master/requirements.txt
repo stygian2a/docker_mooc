@@ -1,0 +1,7 @@
+Flask
+WTForms==1.0.1
+SQLAlchemy
+bcrypt
+requests
+flask-heroku
+gunicorn
