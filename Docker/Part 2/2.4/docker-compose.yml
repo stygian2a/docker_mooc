@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+    backend:
+      image: backend1
+      container_name: backend1
+      ports:
+        - 8080:8080
+        
+      depends_on:
+        - redis
+        
+      environment:
+          REDIS_HOST: redis
+        
+        
+    frontend:
+      image: frontend1
+      container_name: frontend1
+      ports:
+        - 5000:5000
+        
+        
+    redis:
+        image: redis
+        container_name: redis
+        restart: unless-stopped
